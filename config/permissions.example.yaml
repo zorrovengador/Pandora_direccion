@@ -1,0 +1,26 @@
+# Ejemplo no operativo. Nunca guardar secretos aquí.
+profile:
+  name: director-general
+  tenant_isolation: required
+  default_mode: read_only
+sources:
+  gmail: read_only
+  calendar: read_only
+  drive: read_only
+  meetings: read_only
+actions:
+  draft_email: approval_required
+  send_email: disabled_until_explicitly_enabled
+  create_calendar_event: approval_required
+  modify_documents: approval_required
+  change_permissions: disabled
+  delete_data: disabled
+memory:
+  provider: local
+  store_secrets: false
+  store_raw_confidential_documents: false
+  require_provenance: true
+external_egress:
+  arbitrary_urls: approval_required
+  uploads: approval_required
+  web_research_worker_separate_from_private_data: true
