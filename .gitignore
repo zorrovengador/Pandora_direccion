@@ -1,0 +1,20 @@
+# Secrets and runtime state
+.env
+.env.*
+!.env.example
+**/auth.json
+**/state.db
+**/sessions/
+**/logs/
+**/memory_store.db
+**/*token*
+**/*secret*
+**/*credential*
+**/*qr*
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+__pycache__/
