@@ -1,0 +1,13 @@
+{
+  "tool": "NVIDIA SkillSpector",
+  "version": "2.9.5",
+  "command_mode": "uvx from GitHub, --no-llm, --recursive, --format json",
+  "skills_scanned": 7,
+  "execution_successful": true,
+  "max_risk_score": 0,
+  "findings": 0,
+  "recommendation": "SAFE",
+  "scope": "Pandora_direccion/skills",
+  "generated_at": "2026-08-16T18:49:41Z",
+  "note": "Static preflight result; human review remains required for future changes."
+}
